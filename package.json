@@ -1,0 +1,13 @@
+{
+	"name" : "my-app",
+	"version" : "0.0.1",
+	"dependencies":{
+		"express" : "latest",
+		"whiskers" : "latest",
+		"connect-assets" : "latest",
+		"coffee-script" : "latest"
+	},
+	"engines" : {
+		"node" : "0.8.x"
+	}
+}
