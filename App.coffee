@@ -1,6 +1,7 @@
 express = require 'express'
 whiskers = require 'whiskers'
 db = require './config/Datastore'
+routes = require('./app/routes/Index')(db.datastore)
 
 app = express express.logger() 
 app.use express.errorHandler({ dumpExceptions: true, showStack: true })
@@ -11,8 +12,6 @@ app.engine 'html', whiskers.__express
 app.use '/components', express.static(__dirname + '/public/components')
 app.use '/img', express.static(__dirname + '/public/img')
 
-
-routes = require('./app/routes/Index')(db.datastore)
 app.get '/', routes.get
 
 port = process.env.PORT or 3000
