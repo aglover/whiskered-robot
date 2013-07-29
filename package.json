@@ -4,13 +4,8 @@
 	"dependencies":{
 		"express" : "latest",
 		"whiskers" : "latest",
-		"connect-assets" : "latest",
 		"coffee-script" : "latest",
-		"mongoskin":"latest",
-		"connect-coffee-script":"latest",
-		"connect":"latest",
-		"coffee-middleware":"latest"
-
+		"mongoskin":"latest"
 	},
 	"engines" : {
 		"node" : "0.8.x"
