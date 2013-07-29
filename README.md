@@ -2,6 +2,8 @@
 
 Simple Node, Coffeescript, and jQuery Mobile template (plus deployment to Heroku). And connect-assets for Coffeescript includes. Uses Whiskers as template engine too.
 
+Makes use of [Bower](http://bower.io/) for UI components such as [jQuery Mobile Flat-UI Theme](https://github.com/ququplay/jquery-mobile-flat-ui-theme)
+
 ## Installation 
 
 Make sure you have a current version of Node. I recommend [NVM](http://thediscoblog.com/blog/2013/03/12/node-in-3-commands/). Then `cd` into the root of this project and type:
