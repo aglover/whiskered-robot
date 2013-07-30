@@ -8,7 +8,5 @@ $(document).on "pageinit", (event) ->
     console.log "swiperight invoked"
     prevpage = $(this).prev("div[data-role=\"page\"]")
     if prevpage.length > 0
-      $.mobile.changePage prevpage,
-        transition: "slide"
-        reverse: true, true, true
+      $.mobile.changePage prevpage, {transition: "slide", reverse: true}, true, true
 
