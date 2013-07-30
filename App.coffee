@@ -7,11 +7,20 @@ routes = require('./app/routes/Index')(db.datastore)
 app = express express.logger() 
 app.use express.errorHandler({ dumpExceptions: true, showStack: true })
 
+app.use(require('asset-pipeline')({
+    server: app,
+    assets: './assets',
+    debug: false,
+    extensions: ['.js'],
+    cache: './public/js'
+}))
+
 app.set 'view engine', 'html'
 app.engine 'html', whiskers.__express 
 
 app.use '/components', express.static(__dirname + '/public/components') # set up bower
 app.use '/img', express.static(__dirname + '/public/img')
+app.use '/css', express.static(__dirname + '/public/css')
 
 app.get '/', routes.index
 

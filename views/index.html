@@ -18,48 +18,12 @@
     }); 
   </script>
 
-  <script>
-     $(document).on('pageinit', function(event){
-        $('div.ui-page').on("swipeleft", function () {
-            console.log("swipeleft invoked");
-            var nextpage = $(this).next('div[data-role="page"]');
-            if (nextpage.length > 0) {
-                $.mobile.changePage(nextpage, "slide", false, true);
-            }
-        });
-
-        $('div.ui-page').on("swiperight", function () {
-            console.log("swiperight invoked");
-            var prevpage = $(this).prev('div[data-role="page"]');
-            if (prevpage.length > 0) {
-                $.mobile.changePage(prevpage, { transition: "slide", reverse: true }, true, true);
-            }
-        });
-      });
-  </script>
-
-  <style>
-    .center-wrapper{
-      text-align: center;
-    }
-    div[data-role=navbar] .ui-btn .ui-btn-inner { 
-      padding-top: 50px; 
-    }
-    div[data-role=navbar] .ui-btn .ui-icon { 
-      width: 40px; 
-      height: 40px; 
-      margin-left: -20px; 
-    }
-    #csinfo .ui-icon { 
-      background:  url(img/42-info.png) 50% 50% no-repeat; 
-    }
-    #quiz .ui-icon { 
-      background:  url(img/258-checkmark.png) 50% 50% no-repeat; 
-    }
-  </style>
+  <script src="swipe.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/site.css" />
   <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  
 </head>
 <body>
 
