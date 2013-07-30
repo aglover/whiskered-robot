@@ -1,3 +1,4 @@
+require './config/Bootstrap'
 express = require 'express'
 whiskers = require 'whiskers'
 db = require './config/Datastore'
@@ -8,11 +9,11 @@ app.use express.errorHandler({ dumpExceptions: true, showStack: true })
 
 app.set 'view engine', 'html'
 app.engine 'html', whiskers.__express 
-# set up bower
-app.use '/components', express.static(__dirname + '/public/components')
+
+app.use '/components', express.static(__dirname + '/public/components') # set up bower
 app.use '/img', express.static(__dirname + '/public/img')
 
-app.get '/', routes.get
+app.get '/', routes.index
 
 port = process.env.PORT or 3000
 
