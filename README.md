@@ -14,7 +14,16 @@ Next, make sure you have Coffeescript in your path -- just install it for your c
 
 `$> sudo npm install -g coffee-script`
 
-Then make sure you have Ruby & Foreman (what if you don't?) and then type:
+
+Following that, you must install Bower:
+
+`$> sudo npm install -g bower`
+
+Then type:
+
+`$> bower install`
+
+Finally, make sure you have Ruby & Foreman (what if you don't?) and then type:
 
 `$> foreman start`
 
