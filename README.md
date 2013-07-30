@@ -1,6 +1,6 @@
 # Whiskered Robot 
 
-Simple Node, [Coffeescript](http://coffeescript.org/), and jQuery Mobile template (plus deployment to Heroku). Uses [Whiskers](https://github.com/gsf/whiskers.js) as template engine too.
+Simple Node, [Coffeescript](http://coffeescript.org/), and jQuery Mobile template (plus deployment to Heroku). Uses [Whiskers](https://github.com/gsf/whiskers.js) as template engine as well as [Asset pipeline](https://github.com/rlidwka/asset-pipeline).
 
 Makes use of [Bower](http://bower.io/) for UI components such as [jQuery Mobile Flat-UI Theme](https://github.com/ququplay/jquery-mobile-flat-ui-theme)
 
