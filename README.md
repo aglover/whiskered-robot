@@ -17,7 +17,7 @@ Next, make sure you have Coffeescript in your path -- just install it for your c
 `$> sudo npm install -g coffee-script`
 
 
-Finally, make sure you have Ruby & Foreman (what if you don't? Install Heroku toolbet as that'll give it to you) and then type:
+Finally, make sure you have Ruby & Foreman (what if you don't? Install [Heroku Toolbelt](https://toolbelt.heroku.com/) as that'll give it to you) and then type:
 
 `$> foreman start`
 
